@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+$pc: #444;
+$bc: #eee;
+$font: 'Fira Sans Condensed', sans-serif;
+$errorColor: #CD5C5C;
+$completedColor: #888;
+
+.app {
+    padding: 10px;
+    max-width: 480px;
+    margin: auto;
+    background-color: $bc;
+    border: 2px solid $pc;
+    color: $pc;
+    text-align: center;
+    font-family: $font;
+}
+
+.title {
+    margin-block-end: 0.1rem;
+}
+
+.author {
+    margin: 2px;
+}
+
+.task-list {
+    margin: 1rem auto;
+    text-align: left;
+    width: 15rem;
+    // border: 1px solid;
+}
+
+.task {
+    margin: 0.5rem;
+}
+
+.task-name {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    color: $completedColor;
+    transition: 0.5s;
+}
+
+.complete-checkbox {
+    margin-right: 1rem;
+}
+
+button {
+    // display: inline-block;
+    margin: 10px;
+    border-radius: 0px;
+    background-color: $pc;
+    border: 1px solid $pc;
+    color: $bc;
+    font-family: $font;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    border-radius: 0px;
+    background-color: $bc;
+    color: $pc;
+}
+
+button.delete-button {
+    margin: 0px;
+}
+
+.error {
+    color: $errorColor;
+}
